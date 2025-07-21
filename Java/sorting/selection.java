@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class selection {
     public static void main(String[] args) {
-        int[] arr = {1, 8, 9, 12, 13, 18, 20}; 
+        int[] arr = {18, 9, 13, 12,20, 8, 1}; 
 
         for (int i = 0; i < arr.length - 1; i++) {
             int getMin = i;
