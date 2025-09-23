@@ -56,7 +56,6 @@ public class InfixtoPrefix {
             i++;
         }
 
-        // pop remaining operators
         while (!st.isEmpty()) {
             res.append(st.pop());
         }
