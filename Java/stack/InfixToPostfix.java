@@ -29,7 +29,7 @@ public class InfixToPostfix {
         while(i < inp.length){
             char ch = inp[i];
 
-            if(Character.isLetterOrDigit(ch)){  // operand
+            if(Character.isLetterOrDigit(ch)){ 
                 res.append(ch); 
             }
             else if(ch == '('){
@@ -40,16 +40,16 @@ public class InfixToPostfix {
                     res.append(st.pop());
                 }
                 if(!st.isEmpty() && st.peek() == '('){
-                    st.pop(); // remove '('
+                    st.pop();
                 }
             }
-            else { // operator
+            else { 
                 while(!st.isEmpty() && getPriority(ch) <= getPriority(st.peek())){
                     res.append(st.pop()); 
                 }
                 st.push(ch); 
             }
-            i++; // ✅ increment
+            i++; 
         }
 
         // pop remaining operators
