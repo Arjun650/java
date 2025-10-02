@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int minFallingPathSum(int[][] matrix) {
         int m = matrix.length; 
