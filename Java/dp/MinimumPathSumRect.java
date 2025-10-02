@@ -17,6 +17,7 @@ class Solution {
 
         return minSum; 
     }
+    //this is code for leetcode
 
     public int findMinimumSum(int i, int j, int[][] matrix, int[][] dp) {
         if (j < 0 || j >= matrix[0].length) return (int)Math.pow(10, 6);
