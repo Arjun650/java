@@ -22,15 +22,14 @@ function thirdPromise() {
     });
 }
 
-// Chain them properly
 firstPromise()
   .then(value1 => {
       console.log(value1);
-      return secondPromise();  // return a new promise
+      return secondPromise();
   })
   .then(value2 => {
       console.log(value2);
-      return thirdPromise();   // chain another
+      return thirdPromise();
   })
   .then(value3 => {
       console.log(value3);
