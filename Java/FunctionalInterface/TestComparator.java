@@ -17,7 +17,6 @@ public class TestComparator {
             ar[i].name = "skj";
             ar[i].rollno = (int)(Math.random() * 10);
         }
-
         
         Comparator<InnerComparator> com = new Comparator<InnerComparator>(){
             public int compare(InnerComparator a, InnerComparator b){
